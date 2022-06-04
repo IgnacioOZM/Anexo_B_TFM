@@ -1,0 +1,39 @@
+\documentclass [11pt,a4paper,twoside,english,spanish]{bmpthesis}
+\addbibresource{References.bib}
+
+\Author{Ignacio Ortiz de Zúñiga Mingot}
+\Date{Noviembre de 2022}
+\Degree{Master universitario en ingeniería industrial}
+\Keywords{Artificial vision, Sintetic database, YOLO, Pick & Place}
+\Subject{Anexo B}
+\Supervisors{Álvaro Jesús López López, Ignacio de Rodrigo Tobías}
+\Title{Sistema de visión artificial basado en un dataset sintético para una aplicación de Pick and Place}
+\Footer{Sistema de visión artificial para una aplicación de Pick and Place}
+
+\begin{document}
+
+\frontmatter
+%\Frontcover
+\includepdf[pages=1]{caratula_ignacio.pdf}
+
+\TableOfContents
+%\ListOfFigures
+%\ListOfTables
+%\ListOfAlgorithms
+%\Acronyms
+
+\mainmatter
+  \input{Introducción.tex}
+  \input{Estado de la cuestion.tex}
+  \input{Metodologia de trabajo.tex}
+  \input{ODS.tex}
+
+\backmatter 
+  \begingroup
+    \setlength\bibitemsep{7pt plus 2pt minus 2pt}
+    \phantomsection 
+    \addcontentsline{toc}{chapter}{Bibliografía} 
+    \printbibliography[title = {Bibliografía}]
+  \endgroup
+
+\end{document}
